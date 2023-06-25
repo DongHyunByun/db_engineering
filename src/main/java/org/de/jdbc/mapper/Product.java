@@ -9,6 +9,26 @@ public class Product {
     String contents;
     int price;
 
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public String getContents() {
+        return contents;
+    }
+
     public int getPrice() {
         return price;
     }
