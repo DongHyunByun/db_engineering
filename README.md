@@ -25,5 +25,8 @@
         1. batch : SQL쿼리들을 여러개 실행한 후 저장 해 놓고, 나중에 한번에 수행하는 것. executeupdate 함수만을 사용할 수 있다.(select등은 사용할 수 없다)
         2. execute : select등 조회값을 확인하는 함수(결과값이 있으면 True를 리턴하며 getResultSet을 이용해 출려값을 얻고 , 결과값이 없거나 executeUpdate인 경우 False를 리턴하고 getUpdateCount로 수행된 갯수를 얻는다)
         3. executeupdate : update, insert, delete 등 결과를 받아오지 않는 명령을 실행하는 함수. (변경사항에 적용된 row수를 리턴)
+    7. /rollback 
+        1. /savepoint : savepoint를 이용한 rollback
+        2. main.java : transaction commit. 트렌잭션이 커밋되지 않았을 때 다른 트랜잭션에서 조회시 바뀐값이 나오지 않는 것을 확인하는 실습
 
 
